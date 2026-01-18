@@ -1,0 +1,5 @@
+echo "Objects/" >> .gitignore
+   echo "Listings/" >> .gitignore
+   echo "*.axf" >> .gitignore
+   echo "*.hex" >> .gitignore
+   echo "RTE/" >> .gitignore
