@@ -174,10 +174,11 @@ int main(void)
 	  	  print_msg(message);
 
 	  adc_res_ten = adc_res * 10 / 4096;
+
 	  HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_SET);
 	  HAL_Delay(adc_res_ten);
 	  HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, GPIO_PIN_RESET);
-	  HAL_Delay(10-adc_res_ten);
+	  HAL_Delay(10 - adc_res_ten);
 
 #endif SW_PWM
 
